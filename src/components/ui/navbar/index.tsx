@@ -16,7 +16,6 @@ const Nav = () => {
     return (
       <Navbar
         isBordered
-        className="fixed"
         isMenuOpen={isMenuOpen}
         onMenuOpenChange={setIsMenuOpen}
       >

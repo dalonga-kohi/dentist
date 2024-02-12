@@ -1,19 +1,18 @@
+import Floating from "./floating"
+import Image from "next/image"
+
 const Hero = () => {
     return (
-        // <div className="h-screen w-full relative">
-        //     <div className="blur-sm w-full h-full opacity-60 absolute top-0 left-0 bg-center bg-cover" style={{backgroundImage: "url('hero.jpeg')"}}>
-        //     </div>
-        //     <div className="w-full p-8 bg-zinc-600 bg-opacity-70 text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        //         <h1 className="text-4xl">
-        //             Twoja przychodnia stomatologiczna!
-        //         </h1>
-        //         <p className="text-md">Przyjdź i uśmiechnij się jeszcze raz</p>
-        //     </div>
-        // </div>
-        <div className="h-screen">
-            <div className="relative after:absolute after:top-1/2 after:left-0 after:h-full after:w-full  w-full h-full" style={{backgroundImage: "url('hero.jpeg')"}}>
-
+        <div className="h-screen w-full relative flex-col text-center flex items-center justify-center">
+            <h1 className="text-3xl p-2 font-bold mb-4">Twoja przychodnia stomatologiczna!</h1>
+            <div>
+                <Image src="/Doctor.png" alt="Doktor" aria-hidden width={350} height={0}/>
             </div>
+            <h2 className="text-xl font-medium mt-8">Uśmiechnij się jeszcze raz</h2>
+
+            {/* Floating elements */}
+            <Floating url="/caninie.png" posX={1} posY={2}/>
+            <Floating url="/dental.png" posX={1} posY={2}/>
         </div>
     )
 }
