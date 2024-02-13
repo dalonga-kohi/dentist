@@ -10,13 +10,14 @@ interface Props {
 export default function Card({user, content, tag}: Props) {
     const [isFollowed, setIsFollowed] = React.useState(false);
 
-    <NextCard className="max-w-[340px]">
+    return (
+        <NextCard className="max-w-[340px] mt-8">
         <CardHeader className="justify-between">
             <div className="flex gap-5">
             <Avatar isBordered radius="full" size="md" src="/avatar.jpg" />
             <div className="flex flex-col gap-1 items-start justify-center">
-                <h4 className="text-small font-semibold leading-none text-default-600">Madzia W.</h4>
-                <h5 className="text-small tracking-tight text-default-400">@MadziaLuka</h5>
+                <h4 className="text-small font-semibold leading-none text-default-600">{user}</h4>
+                <h5 className="text-small tracking-tight text-default-400">{tag}</h5>
             </div>
             </div>
             <Button
@@ -32,14 +33,9 @@ export default function Card({user, content, tag}: Props) {
         </CardHeader>
         <CardBody className="px-3 py-0 text-small text-default-400">
             <p>
-                Wkoncu się uśmiechnęłam na mieście! Dziękuje 🤗
+                {content}
             </p>
-            <span className="pt-2">
-            #UśmiechnijSię
-            <span className="py-2" aria-label="computer" role="img">
-                💻
-            </span>
-            </span>
+            
         </CardBody>
         <CardFooter className="gap-3">
             <div className="flex gap-1">
@@ -52,4 +48,5 @@ export default function Card({user, content, tag}: Props) {
             </div>
         </CardFooter>
         </NextCard>
+    )
 }
