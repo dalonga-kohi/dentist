@@ -13,9 +13,9 @@ const Hero = () => {
                 <p className="text-xl font-medium mt-8">Uśmiechnij się pewny siebie wraz z nami</p>
 
                 {/* Floating elements */}
-                <Floating url="/caninie.png" posX={25} posY={50} scale={0.9} rotation={-25}/>
-                <Floating url="/dental.png" posX={75} posY={20} scale={1.2} rotation={45}/>
-                <Floating url="/Prescr.png" posX={65} posY={40} rotation={5}/>
+                <Floating url="/caninie.png" posX={25} posY={50} scale={0.9} rotation={-25} factor={-3}/>
+                <Floating url="/dental.png" posX={75} posY={20} scale={1.2} rotation={45} factor={5}/>
+                <Floating url="/Prescr.png" posX={65} posY={40} rotation={5} factor={7}/>
 
                 {/* Info boxes */}
                 <InfoBox className="lg:absolute lg:top-2/4 xl:-right-24 lg:-right-48">
