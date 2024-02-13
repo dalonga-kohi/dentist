@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import {Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenuItem, NavbarMenu, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
 
 const Nav = () => {
@@ -25,7 +26,9 @@ const Nav = () => {
 
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarBrand>
-          <p className="font-bold text-inherit">LOGO</p>
+          <Link color="foreground" href="/">
+            <Image src="/logo.png" alt="logo przychodni" width={60} height={0}/>
+          </Link>
         </NavbarBrand>
         <NavbarItem>
           <Link color="foreground" href="#">
