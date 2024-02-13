@@ -48,7 +48,7 @@ const Nav = () => {
 
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
+          <Button as={Link} color="primary" href="/rejestracja" variant="flat">
             Rejestracja
           </Button>
         </NavbarItem>
