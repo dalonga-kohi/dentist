@@ -24,7 +24,7 @@ export default function Floating({url, posX, posY, scale = 1, rotation = 0, fact
     return (
         <Image ref={ref}
             src={url} alt="" aria-hidden width={50*scale} height={0}
-            className='absolute opacity-80 z-0'
+            className='absolute opacity-90 z-0'
             style={{top: `${posY}%`, left: `${posX}%`, rotate: `${rotation}deg`}}
         />
 
