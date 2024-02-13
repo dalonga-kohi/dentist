@@ -11,7 +11,7 @@ export default function Card({user, content, tag}: Props) {
     const [isFollowed, setIsFollowed] = React.useState(false);
 
     return (
-        <NextCard className="max-w-[340px] mt-8">
+        <NextCard className="max-w-[340px]">
         <CardHeader className="justify-between">
             <div className="flex gap-5">
             <Avatar isBordered radius="full" size="md" src="/avatar.jpg" />
