@@ -2,7 +2,7 @@
 
 import Nav from "@/components/ui/navbar"
 import Image from "next/image"
-
+import React from "react";
 const Oferta = () => {
 
     return (

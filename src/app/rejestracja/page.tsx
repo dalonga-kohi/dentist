@@ -1,7 +1,7 @@
 const Rejestracja = () => {
     return (
         <div className="">
-             Rejestracja
+                Rejestracja
         </div>
     )
 }
