@@ -1,7 +1,7 @@
 "use client"
 
 import Nav from "@/components/ui/navbar"
-import { Image } from "@nextui-org/react"
+import Image from "next/image"
 
 const Oferta = () => {
 
@@ -27,6 +27,7 @@ const Oferta = () => {
                                     src="/happyman.png"
                                     height={0}
                                     width={550}
+                                    className="rounded-xl"
                                     alt="ZadowolonyKlient"
                                     />                                
                                 </div>
@@ -36,12 +37,13 @@ const Oferta = () => {
                                     <h1 className="lg:text-4xl font-bold lg:mb-4 lg:w-2/4 lg:text-center">Najnowocześniejsza technologia</h1>
                                     <p className="text-wrap w-full lg:w-2/4 lg:max-w-sm text-center">W naszym gabinecie stomatologicznym wykorzystujemy najnowocześniejsze technologie, takie jak skanery 3D do precyzyjnego planowania leczenia oraz radiografię cyfrową, która zapewnia szybką analizę obrazów przy minimalnej dawce promieniowania.</p>
                                 </div>
-                                <div className="w-full lg:w-2/5 flex justify-center my-9 lg:m-0 items-center">
+                                <div className="w-full lg:w-2/5 flex justify-center my-9 lg:m-0 items-center animate-slidein700">
                                     <Image
-                                    src="/dentistroom.png"
-                                    height={0}
-                                    width={450}
-                                    alt="ZadowolonyKlient"
+                                        className="rounded-xl"
+                                        src="/dentistroom.png"
+                                        height={0}
+                                        width={550}
+                                        alt="ZadowolonyKlient"
                                     />                                
                                 </div>
                             </div>
