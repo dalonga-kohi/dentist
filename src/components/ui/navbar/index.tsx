@@ -8,10 +8,9 @@ const Nav = () => {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
     const menuItems = [
-      "O nas",
-      "Zespół",
-      "Oferta",
-      ""
+      ["O nas", "/onas"],
+      ["Zespół", "/onas"],
+      ["Oferta", "/oferta"],
     ]
 
     return (
@@ -31,12 +30,12 @@ const Nav = () => {
           </Link>
         </NavbarBrand>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="/onas">
             O nas
           </Link>
         </NavbarItem>
         <NavbarItem >
-          <Link href="#" color="foreground">
+          <Link href="/onas" color="foreground">
             Zespół
           </Link>
         </NavbarItem>
@@ -57,16 +56,16 @@ const Nav = () => {
 
       <NavbarMenu>
         {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
+          <NavbarMenuItem key={`${item[0]}-${index}`}>
             <Link
               className="w-full"
               color={
                 index === 2 ? "warning" : index === menuItems.length - 1 ? "danger" : "foreground"
               }
-              href="#"
+              href={item[1]}
               size="lg"
             >
-              {item}
+              {item[0]}
             </Link>
           </NavbarMenuItem>
         ))}
